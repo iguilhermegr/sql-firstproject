@@ -1,6 +1,6 @@
 # <p align="center"> SQL ADS 🌐 </p> 
 
-### <div align="center"><code> Meu primeiro projeto em SQL </code></div>
+### <div align="center"><code> Meu primeiro projeto em SQL no curso de ADS no CEEP de Cianorte Turma 2C </code></div>
  
 
 -------------------------------------------------------------------------------------------------------------------------------------------
