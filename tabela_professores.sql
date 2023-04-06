@@ -18,7 +18,6 @@ INSERT INTO materia (descricao) VALUES ("Análise de Sistemas");
 INSERT INTO materia (descricao) VALUES ("Ciência da Computação");
 INSERT INTO materia (descricao) VALUES ("Banco de Dados");
 
-
 INSERT INTO professor (nome, email, id_materia) VALUES ("Ferdinanda", "ferdinanda@escola.pr.gov.br", 1);
 INSERT INTO professor (nome, email, id_materia) VALUES ("Helena", "helena@escola.pr.gov.br", 2);
 INSERT INTO professor (nome, email, id_materia) VALUES ("Marcia", "marcia@escola.pr.gov.br", 3);
@@ -34,3 +33,5 @@ INSERT INTO professor (nome, email, id_materia) VALUES ("William", "william@esco
 INSERT INTO professor (nome, email, id_materia) VALUES ("Edvaldo", "edvaldo@escola.pr.gov.br", 13);
 INSERT INTO professor (nome, email, id_materia) VALUES ("Osvaldo", "osvaldo@escola.pr.gov.br", 14);
 INSERT INTO professor (nome, email, id_materia) VALUES ("Edvaldo", "edvaldo@escola.pr.gov.br", 15);
+
+SELECT * FROM professor, materia WHERE professor.id_materia = materia.id;
