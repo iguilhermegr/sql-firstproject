@@ -1,24 +1,26 @@
+DROP TABLE professor
+DROP TABLE materia
+
 CREATE TABLE professor ( id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(100), email VARCHAR(255), cidade VARCHAR(100), id_materia INTEGER);
 
 CREATE TABLE materia ( id INTEGER AUTO_INCREMENT PRIMARY KEY, descricao VARCHAR(100));
 
-INSERT INTO id_materia (descricao) VALUES ("Matemática");
-INSERT INTO id_materia (descricao) VALUES ("Português");
-INSERT INTO id_materia (descricao) VALUES ("Inglês");
-INSERT INTO id_materia (descricao) VALUES ("Sociologia");
-INSERT INTO id_materia (descricao) VALUES ("Biologia");
-INSERT INTO id_materia (descricao) VALUES ("Química");
-INSERT INTO id_materia (descricao) VALUES ("Geografia");
-INSERT INTO id_materia (descricao) VALUES ("História");
-INSERT INTO id_materia (descricao) VALUES ("Projeto de Vida");
-INSERT INTO id_materia (descricao) VALUES ("Educação Financeira");
-INSERT INTO id_materia (descricao) VALUES ("Programação Front-End");
-INSERT INTO id_materia (descricao) VALUES ("Programação Mobile");
-INSERT INTO id_materia (descricao) VALUES ("Análise de Sistemas");
-INSERT INTO id_materia (descricao) VALUES ("Ciência da Computação");
-INSERT INTO id_materia (descricao) VALUES ("Banco de Dados");
+INSERT INTO materia (descricao) VALUES ("Matemática");
+INSERT INTO materia (descricao) VALUES ("Português");
+INSERT INTO materia (descricao) VALUES ("Inglês");
+INSERT INTO materia (descricao) VALUES ("Sociologia");
+INSERT INTO materia (descricao) VALUES ("Biologia");
+INSERT INTO materia (descricao) VALUES ("Química");
+INSERT INTO materia (descricao) VALUES ("Geografia");
+INSERT INTO materia (descricao) VALUES ("História");
+INSERT INTO materia (descricao) VALUES ("Projeto de Vida");
+INSERT INTO materia (descricao) VALUES ("Educação Financeira");
+INSERT INTO materia (descricao) VALUES ("Programação Front-End");
+INSERT INTO materia (descricao) VALUES ("Programação Mobile");
+INSERT INTO materia (descricao) VALUES ("Análise de Sistemas");
+INSERT INTO materia (descricao) VALUES ("Ciência da Computação");
+INSERT INTO materia (descricao) VALUES ("Banco de Dados");
 
-SELECT * from materia;
 
 INSERT INTO professor (nome, email, id_materia) VALUES ("Ferdinanda", "ferdinanda@escola.pr.gov.br", 1);
 INSERT INTO professor (nome, email, id_materia) VALUES ("Helena", "helena@escola.pr.gov.br", 2);
