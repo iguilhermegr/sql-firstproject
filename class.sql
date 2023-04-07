@@ -1,7 +1,16 @@
-CREATE TABLE professor ( id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(100), email VARCHAR(255), cidade VARCHAR(100), id_materia INTEGER);
+/* Criando as tabelas */ 
+CREATE TABLE professor (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(255), 
+    cidade VARCHAR(100),
+    id_materia INTEGER);
+CREATE TABLE materia (
+    id INTEGER AUTO_INCREMENT 
+    PRIMARY KEY, 
+    descricao VARCHAR(100));
 
-CREATE TABLE materia ( id INTEGER AUTO_INCREMENT PRIMARY KEY, descricao VARCHAR(100));
-
+/* Alimentando a tabela materia */
 INSERT INTO materia (descricao) VALUES ("Matemática");
 INSERT INTO materia (descricao) VALUES ("Português");
 INSERT INTO materia (descricao) VALUES ("Inglês");
@@ -18,6 +27,7 @@ INSERT INTO materia (descricao) VALUES ("Análise de Sistemas");
 INSERT INTO materia (descricao) VALUES ("Ciência da Computação");
 INSERT INTO materia (descricao) VALUES ("Banco de Dados");
 
+/* Alimentando a tabela professor */
 INSERT INTO professor (nome, email, id_materia) VALUES ("Ferdinanda", "ferdinanda@escola.pr.gov.br", 1);
 INSERT INTO professor (nome, email, id_materia) VALUES ("Helena", "helena@escola.pr.gov.br", 2);
 INSERT INTO professor (nome, email, id_materia) VALUES ("Marcia", "marcia@escola.pr.gov.br", 3);
@@ -34,4 +44,5 @@ INSERT INTO professor (nome, email, id_materia) VALUES ("Edvaldo", "edvaldo@esco
 INSERT INTO professor (nome, email, id_materia) VALUES ("Osvaldo", "osvaldo@escola.pr.gov.br", 14);
 INSERT INTO professor (nome, email, id_materia) VALUES ("Edvaldo", "edvaldo@escola.pr.gov.br", 15);
 
+/* Alinhando os dados */
 SELECT * FROM professor, materia WHERE professor.id_materia = materia.id;
